@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>api</title>
+	<style type="text/css">
+		h2{font-size:14px;margin:0;padding:0 0 10px;}
+		.loading{color:#f00;display:none;}
+		.content{display:none;}
+		.put{width:300px;height:32px;line-height:32px;border:1px solid #666;box-sizing:border-box;padding:0 4px;margin:0 10px 0 0;}
+		.submit{height:32px;line-height:32px;border:1px solid #fff;background:#f00;color:#fff;vertical-align:middle;box-sizing:border-box;margin:0;padding:0 20px;text-align:center;}
+		.resData{position:relative;}
+		.picView{position:absolute;right:0;top:0;width:600px;height:600px;border:1px solid #ccc;padding:4px;overflow:hidden;overflow-y:auto;z-index:10}
+		.picView img{width:100%;}
+		.resources{margin:20px 0 0 0;padding:0;list-style:none;}
+		.resources li{padding-left:30px;position:relative;vertical-align:middle;}
+		.resources i{display:inline-block;background:#999;vertical-align:middle;color:#fff;font-style:normal;position:absolute;left:0;top:0;padding:0 4px;}
+		.resources li em{font-style:normal;color:#369;}
+		.proxy{display:none;margin-top:10px;}
+		.btnBox{margin:10px 0;}
+		.fail{color:#fff;font-style:normal;font-weight:bold;display:inline-block;padding:4px 10px;background:#f00;}
+		.ok{color:#fff;font-style:normal;font-weight:bold;background:#53A82E;display:inline-block;padding:4px 10px;}
+	</style>
+</head>
+<body>
+	<h2>测试</h2>
+	<form action="" method="post" class="form">
+		<input type="text" class="put" name="url" value="http://www.baidu.com" placeholder="访问url">
+		<p><input type="checkbox" name="proxy" id="proxy"><label for="proxy">代理</label></p>
+		<div class="proxy">
+			<input type="text" class="put" name="proxy_host" value="" placeholder="代理主机 IP:Port">
+		</div>
+		<div class="btnBox"><input type="button" value="提交" class="submit"></div>
+	</form>
+	<div class="resData">
+		<div class="loading">加载中...</div>
+		<div class="content">
+			<div class="picView"></div>
+			<div class="data"></div>
+			<ul class="resources"></ul>
+		</div>
+	</div>
+</body>
+<script type="text/javascript" src="./renderer.js"></script>
+</html>

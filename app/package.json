@@ -1,0 +1,17 @@
+{
+  "name": "app",
+  "version": "1.0.0",
+  "description": "app",
+  "scripts": {
+    "dev": "webpack -w --watch-poll --progress --colors --display-detail-errors"
+  },
+  "repository": "",
+  "keywords": [],
+  "author": "smailsky",
+  "license": "",
+  "devDependencies": {
+    
+  },
+  "dependencies": {
+  }
+}

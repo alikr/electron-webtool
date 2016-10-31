@@ -1,0 +1,17 @@
+{
+  "name": "test",
+  "version": "1.0.0",
+  "description": "test",
+  "main": "main.js",
+  "scripts": {
+    "start": "electron ."
+  },
+  "repository": "",
+  "keywords": [],
+  "author": "smailsky",
+  "license": "",
+  "devDependencies": {
+    "phantom": "^3.0.1"
+  },
+  "dependencies": {}
+}

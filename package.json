@@ -1,0 +1,26 @@
+{
+  "name": "test",
+  "version": "1.0.0",
+  "description": "test",
+  "main": "electron/main.js",
+  "scripts": {
+    "c": "electron-compile ./electron",
+    "start": "electron .",
+    "asar": "asar pack ./electron default_app.asar",
+    "package": "electron-packager ./ appPack --overwrite --app-version=1.0.0 --platform=win32 --arch=all --out=../dist --version=1.2.1 --icon=./img/app.ico --ignore=node_modules/electron-* --ignore=node_modules/.bin --ignore=.git --ignore=dist"
+  },
+  "bin": {
+    "asar": "node_modules/asar/bin/asar"
+  },
+  "repository": "",
+  "keywords": [],
+  "author": "smailsky",
+  "license": "",
+  "devDependencies": {
+    "asar": "^0.12.3",
+    "electron": "^1.4.4",
+    "electron-packager": "^8.1.0",
+    "electron-reload": "^1.0.2"
+  },
+  "dependencies": {}
+}
